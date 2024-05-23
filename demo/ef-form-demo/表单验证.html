@@ -3,22 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://hibiscustoyou.gitee.io/code-hosting/lib/theme-chalk/index.css">
+  <link rel="stylesheet" href="./lib/theme-chalk/index.css">
   <style>
-    [v-cloak] { display: none; }
+    [v-cloak] {
+      display: none;
+    }
   </style>
 </head>
 
 <body>
   <div id="app" v-cloak>
-    <ef-form
-      ref="EfForm"
-      :model="ruleForm"
-      :rules="rules"
-      label-width="80px"
-      size="mini"
-      popover-class="ef-popover"
-    >
+    <ef-form ref="EfForm" :model="ruleForm" :rules="rules" label-width="80px" size="mini" popover-class="ef-popover">
       <el-button slot="reference" type="text">高级搜索</el-button>
 
       <el-form-item label="活动名称" prop="name">
@@ -33,7 +28,8 @@
       <el-form-item label="活动时间" required>
         <el-col :span="11">
           <el-form-item prop="date1">
-            <el-date-picker type="date" placeholder="选择日期" v-model="ruleForm.date1" style="width: 100%;"></el-date-picker>
+            <el-date-picker type="date" placeholder="选择日期" v-model="ruleForm.date1"
+              style="width: 100%;"></el-date-picker>
           </el-form-item>
         </el-col>
         <el-col class="line" :span="2" style="text-align: center">-</el-col>
@@ -72,7 +68,7 @@
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-<script src="https://hibiscustoyou.gitee.io/code-hosting/lib/index.js"></script>
+<script src="./lib/index.js"></script>
 
 <script>
   const vm = new Vue({

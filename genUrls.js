@@ -18,7 +18,7 @@ const recursion = (route, name) => {
       })
     } else {
       console.log({
-        url: src.replace('./demo', 'https://hibiscustoyou.gitee.io/code-hosting/demo'),
+        url: src.replace('./demo', './demo'),
         name: path.basename(src, '.html')
       }, ',');
     }
